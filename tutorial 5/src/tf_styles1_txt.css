@@ -40,7 +40,7 @@
 /* HTML and Body Styles */
 
 html {
-   background: url(tf_back1.png) center center / cover no-repeat fixed;
+   background: url(../images/tf_back1.png) center center / cover no-repeat fixed;
    height: 100%;
    font-family: Verdana, Geneva, sans-serif;
    font-size: 12px;
@@ -113,11 +113,16 @@ ul.mainmenu > li:first-of-type a {
 
 /* Submenu Styles */
 
+/* Pulldown Menu Styles */
 ul.submenu {
+   display: none;
    width: 100%;
    background-color: rgb(181, 204, 136);
 }
 
+a.submenuTitle:hover+ul.submenu, ul.submenu:hover {
+   display: block;
+}
 
 /* Section Styles */
 
