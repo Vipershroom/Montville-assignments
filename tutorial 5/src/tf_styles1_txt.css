@@ -5,8 +5,8 @@
    Tutorial 5
    Tutorial Case
    
-   Author:   
-   Date:     
+   Author:   Lucas Cerqueira
+   Date:     3/21/2022
    
    Filename: tf_styles1.css
    
@@ -20,6 +20,22 @@
    ===========
 */
 
+/* =====================================
+               Mobile Styles
+   =====================================
+*/ 
+
+@media only screen and (max-width: 480px) {
+
+}
+
+@media only screen and (min-width: 481px) {
+   
+}
+
+@media only screen and (min-width: 769px) {
+   
+}
 
 /* HTML and Body Styles */
 
