@@ -50,7 +50,7 @@ section#topics {
    flex-flow: row wrap;
 }
 
-section#topics artcile {
+section#topics article {
    -webkit-flex: 1 1 200px;
    flex: 1 1 200px;
 }
@@ -63,13 +63,13 @@ section#topics artcile {
 @media only screen and (max-width: 480px) {
   
    aside {
-      -webkit-order: 99%;
-      order: 99%;
+      -webkit-order: 99;
+      order: 99;
    }
    
    footer {
       -webkit-order: 100;
-      order: 100%;
+      order: 100;
    }
 }
 
@@ -89,7 +89,7 @@ section#topics artcile {
 
    nav.horizontal li {
       -webkit-flex: 1 1 auto;
-      flex: auto;
+      flex: 1 1 auto;
    }
 }
 
