@@ -39,11 +39,11 @@ nav.horizontal, section#left, body>header>h1, footer {
 
 /* Typography Styles */
 
-article > header {
+article header {
    margin-bottom: 0.2in;
 }
 
-article > h1 {
+article h1 {
    font-size: 24pt;
    line-height: 26pt;
 }
@@ -53,13 +53,13 @@ aside {
    margin-top: 0.3in;
 }
 
-aside > h1 {
+aside h1 {
    font-size: 18pt;
    line-height: 20pt;
 }
 
-aside > img {
-   width: 0.8;
+aside img {
+   width: 0.8in;
 }
 
 p {
