@@ -26,94 +26,86 @@
 body {
    display: -webkit-flex;
    display: flex;
-   flex-wrap:  wrap;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
 }
 
-#left {
+section#left {
+   -webkit-flex: 1 8 130px;
    flex: 1 8 130px;
 }
 
-#right {
+section#right {
+   -webkit-flex: 8 1 351px;
    flex: 8 1 351px;
 }
 
-.tips {
-   display:-webkit-flex;
-   display: flex;
-   flex-wrap: wrap;
-}
-
-.tips > article {
+section.tips {
    display: -webkit-flex;
    display: flex;
-   flex-wrap: nowrap;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+}
+
+article {
+   -webkit-flex: 2 1 351px;
    flex: 2 1 351px;
 }
 
-.tips > aside {
-   display: -webkit-flex;
-   display: flex;
+aside {
+   -webkit-flex: 1 2 250px;
    flex: 1 2 250px;
 }
 
-nav > ul {
+nav.horizontal ul {
    display: -webkit-flex;
    display: flex;
-   flex-direction: column;
-   flex-wrap: wrap;
+   -webkit-flex-flow: column wrap;
+   flex-flow: column wrap;
 }
 
-#left nav > ul {
-   display: flex;
-   flex-direction: column;
-   flex-wrap: nowrap;
-}
 
 /* ===============================
-	Mobile Devices: 0 to 480px 
-   ===============================
+  Mobile Devices: 0 to 480px 
+  ===============================
 */
-	
+
 @media only screen and (max-width: 480px) {
-   ul {
-      display: flex;
-      display: -webkit-flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      height: 240px;
+   nav.vertical ul {
+       display: -webkit-flex;
+       display: flex;
+       -webkit-flex-flow: column wrap;
+       flex-flow: column wrap;
+       height: 240px;
    }
-   .left section {
-      order: 99;
+   section#left {
+       -webkit-order: 99;
+       order: 99;
    }
-   body > footer {
-      order: 100;
+   footer {
+       -webkit-order: 100;
+       order: 100;
    }
-
    a#navicon {
-      display: block;
+       display: block;
    }
-
-   ul {
-      display: none;
+   nav.horizontal ul {
+       display: none;
    }
-
-   a#navicon:hover+ul, nav.horizontal ul:hover {
-      display: flex;
+   a#navicon:hover+ul,
+   nav.horizontal ul:hover {
+       display: block;
    }
-
 }
-
 
 
 /* ============================================
-	Tablet and Desktop Devices: 481px or more 
-   ============================================
+  Tablet and Desktop Devices: 481px or more 
+  ============================================
 */
 
 @media only screen and (min-width: 481px) {
-   nav > ul {
-      height: 160px;
-      width: 100%;
+   nav.horizontal ul {
+       height: 160px;
    }
 }
-

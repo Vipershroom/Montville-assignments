@@ -19,7 +19,7 @@
 
 /* Hidden Objects */
 
-nav > ul, body > header, .left, footer {
+nav.horizontal, section#left, body>header>h1, footer {
    display: none;
 }
 
@@ -70,8 +70,29 @@ p {
 
 /* Hypertext Styles */
 
+a {
+   color: black;
+   text-decoration: none;
+}
 
+a::after {
+   content: "("attr(href)")";
+   font-weight: bold;
+   word-wrap: break-word;
+}
 
 
 /* Page Break Styles */
 
+aside {
+   page-break-after: always;
+}
+
+ol, ul, img {
+   page-break-inside: avoid;
+}
+
+p {
+   orphans: 3;
+   widows: 3;
+}
