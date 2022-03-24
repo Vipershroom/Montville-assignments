@@ -17,4 +17,27 @@
 
 /* Column Styles */
 
+@media only screen and (min-width: 641px) {
+   article {
+      -moz-column-count: 3;
+      -webkit-column-count: 3;
+      column-count: 3;
 
+      -moz-column-gap: 20px;
+      -webkit-column-gap: 20px;
+      column-gap: 20px;
+
+      -moz-column-rule: 1px solid black;
+      -webkit-column-rule: 1px solid black;
+      column-rule: 1px solid black;
+
+      widows: 3;
+      orphans: 3;
+   }
+
+   article h1 {
+      -moz-column-span: all;
+      -webkit-column-span: all;
+      column-span: all;
+   }
+}
