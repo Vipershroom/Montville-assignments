@@ -94,6 +94,20 @@
 
          <fieldset id="expInfo">
             <legend>Share Your Experience at Red Ball Pizza</legend>
+            <div class="formRow">
+               <label for="visit">Date of visit </label>
+               <input name="visitDate" id="visit" type="date" placeholder="mm/dd/yyyy" />
+            </div>
+
+            <div class="formRow">
+               <label for="order">Order type</label>
+               <select name="orderType" id="order">
+                  <option value="order1">Carry out</option>
+                  <option value="order2" selected>Delivery</option>
+                  <option value="order3">Dine-in</option>
+                  <option value="order4">Take 'n bake</option>
+               </select>
+            </div>
          </fieldset>
       </form>
      
