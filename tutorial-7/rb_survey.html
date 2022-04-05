@@ -58,7 +58,7 @@
 
             <div class="formRow">
                <label for="name">Name*</label>
-               <input type="text" name="custName" id="name" placeholder="first and last name" />
+               <input type="text" name="custName" id="name" placeholder="first and last name" required/>
             </div>
 
             <div class="formRow">
@@ -78,17 +78,17 @@
 
             <div class="formRow">
                <label for="zip">Postal Code</label>
-               <input name="custZip" id="zip" type="text" placeholder="(nnn) nnn-nnn" />
+               <input name="custZip" id="zip" type="text" placeholder="(nnn) nnn-nnn" pattern="^\d{5}(-\d{4})?$"/>
             </div>
 
             <div class="formRow">
                <label for="phone">Phone Number</label>
-               <input name="custPhone" id="phone" type="text" placeholder="(nnn) nnn-nnn" />
+               <input name="custPhone" id="phone" type="text" placeholder="(nnn) nnn-nnn" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
             </div>
 
             <div class="formRow">
                <label for="email">E-mail Address*</label>
-               <input name="custEmail" id="mail" type="text" />
+               <input name="custEmail" id="mail" type="text" required/>
             </div>
          </fieldset>
 
@@ -109,6 +109,10 @@
                </select>
             </div>
          </fieldset>
+         <div class="formRow">
+            <input type="submit" value="Submit My Survey" />
+            <input type="reset" value="Cancel" />
+         </div>
       </form>
      
    </section>
