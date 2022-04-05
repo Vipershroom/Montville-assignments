@@ -19,6 +19,9 @@
    <title>Red Ball Pizza Customer Form</title>
    <link href="rb_base.css" rel="stylesheet" />
    <link href="rb_styles2.css" rel="stylesheet" />
+   <link rel="stylesheet" href="rb_forms2.css">
+   <link rel="stylesheet" href="rb_validate.css">
+   <script src="rb_formsubmit2.js"></script>
 </head>
 
 <body>
@@ -44,6 +47,28 @@
          values are marked by an asterisk (*). If you
          want to place your order over the phone, call us at
          <a href="tel:+13865557499">(386) 555-7499</a>.</p>
+         <form action="http://www.example.com/redball/customer" method="post">
+            <div>
+               <label for="nameBox">Name*</label>
+               <input type="text" name="custName" id="nameBox" placeholder="First and Last Name" required />
+            </div>
+            <div>
+               <label for="phoneBox">Phone*</label>
+               <input type="tel" name="custPhone" id="phoneBox" placeholder="(nnn) nnn-nnnn" required  pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"/>
+            </div>
+            <div>
+               <input type="radio" name="orderType" id="orderType" value="delivery" checked />
+               <label for="delivery">Delivery</label>
+               <input type="radio" name="orderType" id="orderType" value="pickup">
+               <label for="pickup">Pickup</label>
+            </div>
+            <fieldset id="deliveryInfo">
+               <legend>Delivery Options</legend>
+               <textarea name="delAddress" id="addressBox" cols="30" rows="10" placeholder="Enter delivery address"></textarea>
+               <label for="delBox">Delivery Time (leave blank for earliest delivery)</label>
+               <input type="time" name="delTime" id="delBox" />
+            </fieldset>
+         </form>
          
          
    </section>
