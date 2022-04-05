@@ -90,6 +90,38 @@
                <label for="email">E-mail Address*</label>
                <input name="custEmail" id="mail" type="text" />
             </div>
+            <div class="formRow">
+               <label for="info">Where did you hear about us? <br />(select all that apply)</label>
+               <select name="infoSrc" id="info"size='5' multiple>
+                  <option value="internet">Internet</option>
+                  <option value="mag">Magazine</option>
+                  <option value="news">Newspaper</option>
+                  <option value="word">Word Of Mouth</option>
+                  <option value="other">Other</option>
+               </select>
+            </div>
+
+            <div class="formRow">
+               <label for="dish">Whats your favorite dish?</label>
+               <input type="text" name="favDish" id="dish" list="dishType">
+               <datalist id="dishType">
+                  <option value="Antipasto Pizza"></option>
+                  <option value="Big Kahunna Pizza"></option>
+                  <option value="BBQ Chicken Pizza"></option>
+                  <option value="Mediterranean Herb Pizza"></option>
+                  <option value="Pasta Rolls"></option>
+                  <option value="Pasto Artichoke Pizza"></option>
+               </datalist>
+            </div>
+
+            <div class="formRow">
+               <label for="dineSpin">How many times do you dine out per month?</label>
+               <input type="number" name="dineOut" id="dineSpin" value="1" step="1" min="0" max="20">
+            </div>
+
+            <input type="checkbox" name="mailMe" id="mailCB" value="yes">
+            <label for="mailCB">Add me to your mailing list for great coupons and specials!</label>
+
          </fieldset>
 
          <fieldset id="expInfo">
@@ -108,6 +140,44 @@
                   <option value="order4">Take 'n bake</option>
                </select>
             </div>
+            <div class="formRow">
+               <label for="">Was your service friendly?</label>
+               <fieldset class="optGroup">
+                  <label for="fYes">Yes</label>
+                  <input type="radio" name="sFriend" id="fYes" value="yes">
+                  <label for="fNo">No</label>
+                  <input type="radio" name="sFriend" id="fNo">
+               </fieldset>
+            </div>
+            <div class="formRow">
+               <label for="">Was your order correct?</label>
+               <fieldset class="optGroup">
+                  <label for="cYes">Yes</label>
+                  <input type="radio" name="oCorrect" id="cYes" value="yes">
+                  <label for="fNo">No</label>
+                  <input type="radio" name="oCorrect" id="fNo" value="no">
+               </fieldset>
+               <div class="formRow">
+                  <label for="">Was your food hot?</label>
+                  <fieldset class="optGroup">
+                     <label for="hYes">Yes</label>
+                     <input type="radio" name="foodHot" id="hYes" value="yes">
+                     <label for="hNo">No</label>
+                     <input type="radio" name="foodHot" id="hNo" value="no">
+                  </fieldset>
+               </div>
+            </div>
+
+            <div class="formRow">
+               <label for="rangeBox">Rate the overall experience <br /> (0=poor; 10=great)</label>
+               0
+               <input type="range" name="serviceRate" id="rangeBox" value="5" step="1" min="0" max="10">
+               10
+            </div>
+
+            <label for="commBox">Tell us more about your experience!</label>
+            <textarea name="custExp" id="commBox"></textarea>
+
          </fieldset>
       </form>
      
