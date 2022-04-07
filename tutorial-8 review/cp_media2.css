@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 8
+   Review Assignment
+
+   Cinema Penguin Styles for Media
+   Author: 
+   Date:   
+
+   Filename: 
+
+*/
+
+/* Media Styles */
+
+audio, video {
+   display: block;
+   width: 95%;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+
+/* Track Styles */
+
+::cue {
+   background-color: transparent;
+   text-shadow: black 1px 1px;
+   filter: blur(1px);
+   color: rgb(255,177,66);
+   font-size: 1.2em;
+   font-family: sans-serif;
+}
+
+.title {
+   font-size: 2em;
+   font-family: serif;
+}
