@@ -36,7 +36,7 @@ audio, video {
    font-family: sans-serif;
 }
 
-.title {
+::cue(.Title) {
    font-size: 2em;
    font-family: serif;
 }
