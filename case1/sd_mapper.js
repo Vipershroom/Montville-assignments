@@ -17,7 +17,7 @@ const planisphere = document.getElementById("planisphere")
 
 let thisTime = new Date()
 
-let timeStr = thisTime.toLocaleTimeString()
+let timeStr = thisTime.toLocaleString()
 
 timeStamp.innerHTML = timeStr
 
@@ -25,8 +25,8 @@ let thisHour = thisTime.getHours()
 
 let thisMonth = thisTime.getMonth()
 
-let mapNum = (2 * thisMonth + thisHour) / 24
+let mapNum = (2 * thisMonth + thisHour) % 24
 
-let imgStr = `<img src='sd_skyMap${mapNum}.png />'`
+let imgStr = `<img src='sd_sky${mapNum}.png' />`
 
 planisphere.insertAdjacentHTML("afterbegin", imgStr)
